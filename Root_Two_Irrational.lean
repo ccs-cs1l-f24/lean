@@ -22,7 +22,7 @@ example {m n : ℕ} (coprime_mn : m.Coprime n) : m ^ 2 ≠ 2 * n ^ 2 := by
   have hn : 2 ∣ n := by
     refine even_of_even_sqr ?_
     symm at this
-    exact Dvd.intro (k ^ 2) (id (Eq.symm this))
+    use k^2
   have ht: 2 ∣ m.gcd n :=
     Nat.dvd_gcd hm hn
   have : 2 ∣ 1 := by
