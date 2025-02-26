@@ -4,7 +4,7 @@ theorem even_of_even_sqr {m : ℕ} (h : 2 ∣ m ^ 2) : 2 ∣ m := by
   rw [pow_two, Nat.prime_two.dvd_mul] at h
   cases h <;> assumption
 
-example {m n : ℕ} (coprime_mn : m.Coprime n) : m ^ 2 ≠ 2 * n ^ 2 := by
+theorem sqrt_two_irrational {m n : ℕ} (coprime_mn : m.Coprime n) : m ^ 2 ≠ 2 * n ^ 2 := by
   intro sqr_eq
 
   have hm : 2 ∣ m := by
