@@ -1,4 +1,4 @@
-The following are proofs of certain facts in lean. To run these lean programs, download the files given in the repository and load them into a lean environment.
+The files in this repository are proofs of certain facts in lean, including the irrationality of $\sqrt{2}$ and that there are infinitely many primes (proof coming soon). To run these lean programs, download the files given in the repository and load them into a lean environment.
 
 Note that these files only represent proofs and do not have the required dependencies for "running" them as programs.
 
