@@ -13,4 +13,7 @@ The main tools I learned from playing this game were the `rw` and `apply` tactic
 
 The main goal for this proof was to understand the mechanics of a proof by contradiction, as well as to use the tools given by [Mathlib](https://leanprover-community.github.io/mathlib4_docs/Mathlib.html). Lean itself has very little support for simple mathematical statements, and Mathlib attempts to account for this by providing as many simple statements as possible (e.g. all primes are at least 2, and similar statements). However, it can be very hard to navigate this, because it often feels like Mathlib has too much and too little information.
 
+I learned the value of the `apply?` tactic, which you can use to search mathlib for tools that can be applied to a particular situation in a proof. I also learned the `refine` tactic, which reduces a proof from the result of a theorem to the preconditions under which it is true, and the `obtain` tactic, which allows you to extract variables from an "exists" ($\exists$) statement.
+
 ## Proving that there are Infinitely Many Primes
+
