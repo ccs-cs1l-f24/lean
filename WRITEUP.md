@@ -17,4 +17,4 @@ I learned the value of the `apply?` tactic, which you can use to search mathlib 
 
 ## Proving that there are Infinitely Many Primes
 
-This proof required much more effort and was much more complicated than the previous work I had done. I had to craft a strategy for the proof and work out the details. Part of the difficulty of Lean is formalizing the statements that might be easy to state in words, but are difficult to put into symbols. I settled on the statement $\forall n \in \mathbb{N}, \exists p \in \mathbb{N}, p > n \wedge$ $p$ prime. (for every natural number $n,$ there is a prime larger than $n.$)
+This proof required much more effort and was much more complicated than the previous work I had done. I had to craft a strategy for the proof and work out the details. Part of the difficulty of Lean is formalizing the statements that might be easy to state in words, but are difficult to put into symbols. I settled on the statement $\forall n \in \mathbb{N}, \exists p \in \mathbb{N}, p > n \wedge p \text{ prime}$ (for every natural number $n,$ there is a prime larger than $n$).
