@@ -1,7 +1,7 @@
 
 # An Exploration of Interactive Theorem Proving in Lean
 
-The following writeup is a summary of the progress that I made on exploring the Lean interactive proof verification language. 
+The following writeup is a summary of the progress that I made on exploring the Lean interactive proof verification language. Through this quarter I intended to gain familiarity with lean as an interactive theorem prover for mathematical statements, and my goal was to work up to a proof of a substantial theorem in mathematics. I ended up proving that there are infinitely many primes.
 
 ## The Natural Number Game
 
@@ -20,5 +20,9 @@ I learned the value of the `apply?` tactic, which you can use to search mathlib 
 This proof required much more effort and was much more complicated than the previous work I had done. I had to craft a strategy for the proof and work out the details. Part of the difficulty of Lean is formalizing the statements that might be easy to state in words, but are difficult to put into symbols. I settled on the statement $\forall n \in \mathbb{N}, \exists p \in \mathbb{N}, p > n \wedge p \text{ prime}$ (for every natural number $n,$ there is a prime larger than $n$).
 
 The general argument for the proof is as follows: pick any $n$; we will show that there is a prime number larger than $n$. To do this, take any prime divisor of $n! + 1.$ Then $p \cdot (l + 1) = n! + 1$ for some $l \in \mathbb{N},$ so $p \cdot l < n! < p \cdot (l + 1).$ It follows that $\gcd(p, n!) = 1,$ so $p$ is coprime to all natural numbers smaller than $n$, hence is greater than $n.$ Thus $p$ is such a prime number.
+
+## Possible Next Steps
+
+
 
  
