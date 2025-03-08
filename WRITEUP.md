@@ -23,6 +23,10 @@ The general argument for the proof is as follows: pick any $n$; we will show tha
 
 ## Possible Next Steps
 
+There are many possibilities for more advanced projects, but these can generally be split into a few different directions. One natural extension of the work done this quarter would be to try to prove more advanced results, or to try to build a knowledge base of tools in one specific field (e.g. number theory or analysis). 
 
+Another option would be to explore lean more from the standpoint of a programming language. For instance, how does lean actually process theorems? What does it mean to interpret statements as types or check types against each other? How does lean perform computations?
+
+The final option would be to explore lean as a logic system. Lean uses a framework called the calculus of constructions, which as a logic system likely has some limitations when compared to logic systems that we use for manual proofs. Exploring the limits of this proof method could lead to interesting results.
 
  
